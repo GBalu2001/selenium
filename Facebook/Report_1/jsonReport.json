@@ -1,0 +1,217 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "To login account",
+        "description": "",
+        "id": "to-login-a-mynthra--account-functionality-of-application;to-login-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 28947070000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "To launch and maximize the window",
+            "match": {
+              "location": "Step_2.to_launch_and_maximize_the_window()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 66416298500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "To pass the application of the url",
+            "match": {
+              "location": "Step_2.to_pass_the_application_of_the_url()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1475476400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "To pass the mobile number",
+            "match": {
+              "location": "Step_2.to_pass_the_mobile_number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 540964200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "To pass the password",
+            "match": {
+              "location": "Step_2.to_pass_the_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 598269900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "To click the login button",
+            "match": {
+              "location": "Step_2.to_click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8434779400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "To close the mynthra browser",
+            "match": {
+              "location": "Step_2.to_close_the_mynthra_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@feature_1"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "To login a mynthra  account functionality of application",
+    "description": "",
+    "id": "to-login-a-mynthra--account-functionality-of-application",
+    "keyword": "Feature",
+    "uri": "src/test/resources/sample_2.feature",
+    "tags": [
+      {
+        "name": "@feature_1",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "To login icic bank",
+        "description": "",
+        "id": "to-login-icic-bank-application-functionality;to-login-icic-bank",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9370860600,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "To launch browser and maximize the window",
+            "match": {
+              "location": "icic_bank.to_launch_browser_and_maximize_the_window()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37494780000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "To pass the url in icic bank",
+            "match": {
+              "location": "icic_bank.to_pass_the_url_in_icic_bank()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4013144700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "To click the user id check box",
+            "match": {
+              "location": "icic_bank.to_click_the_user_id_check_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 661084200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "To pass user id in user filed",
+            "match": {
+              "location": "icic_bank.to_pass_user_id_in_user_filed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 376859200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "To pass password in password filed",
+            "match": {
+              "location": "icic_bank.to_pass_password_in_password_filed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4733434700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "To click the login button in icic page",
+            "match": {
+              "location": "icic_bank.to_click_the_login_button_in_icic_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2257843300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "To close the browser in icic bank",
+            "match": {
+              "location": "icic_bank.to_close_the_browser_in_icic_bank()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "TO login icic bank application functionality",
+    "description": "",
+    "id": "to-login-icic-bank-application-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/sample_3.feature",
+    "tags": []
+  }
+]

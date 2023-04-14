@@ -1,0 +1,55 @@
+package org.Stepdefinetion;
+
+import org.bassClass.BassClass;
+import org.openqa.selenium.By;
+import org.openqa.selenium.By.ByXPath;
+import org.openqa.selenium.WebElement;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class Step_2 extends BassClass{
+	@Given("To launch and maximize the window")
+	public void to_launch_and_maximize_the_window() {
+		launchBrowser();
+		WindowMaximize();
+		
+	  
+	}
+
+	@When("To pass the application of the url")
+	public void to_pass_the_application_of_the_url() {
+		launchUrl("https://www.myntra.com/login/password?referer=https%3A%2F%2Fwww.myntra.com&show=false");
+	   
+	}
+
+	@When("To pass the mobile number")
+	public void to_pass_the_mobile_number() {
+		WebElement mobilenum = driver.findElement(By.id("mobileNumberPass"));
+		mobilenum.sendKeys("98237923");
+	    
+	}
+
+	@When("To pass the password")
+	public void to_pass_the_password() {
+		WebElement pass = driver.findElement(By.xpath("(//input[@autocomplete='new-password'])[2]"));
+		pass.sendKeys("657487");
+	  
+	}
+
+	@When("To click the login button")
+	public void to_click_the_login_button() {
+		WebElement login = driver.findElement(By.xpath("//Button[text()='LOGIN']"));
+		login.click();
+	    
+	}
+
+	@Then("To close the mynthra browser")
+	public void to_close_the_mynthra_browser() {
+		CloseEntrieElement();
+	    
+	}
+
+
+}

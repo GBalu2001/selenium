@@ -1,0 +1,43 @@
+package org.StepDefenition;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class Step {
+	@Given("To launch browser and maximize the Amazon")
+	public void to_launch_browser_and_maximize_the_Amazon() {
+	  
+	}
+
+	@When("To launch the Amazon url")
+	public void to_launch_the_Amazon_url() {
+	   
+	}
+
+	@When("To click a creat account button")
+	public void to_click_a_creat_account_button() {
+	   
+	}
+
+	@When("To pass the UserName in firstText  filed")
+	public void to_pass_the_UserName_in_firstText_filed(io.cucumber.datatable.DataTable dataTable) {
+	    
+	}
+
+	@When("To pass the MobileNumber")
+	public void to_pass_the_MobileNumber(io.cucumber.datatable.DataTable dataTable) {
+	    
+	}
+
+	@When("To pass the password int password Filed")
+	public void to_pass_the_password_int_password_Filed() {
+	    
+	}
+
+	@Then("To close the browser")
+	public void to_close_the_browser() {
+	    
+	}
+
+}

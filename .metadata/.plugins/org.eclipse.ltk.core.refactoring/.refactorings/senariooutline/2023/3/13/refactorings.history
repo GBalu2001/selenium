@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;BassClass.java&apos; to &apos;Facebook/src/test/java/org.bassClass&apos;&#x0D;&#x0A;- Original project: &apos;senariooutline&apos;&#x0D;&#x0A;- Destination element: &apos;Facebook/src/test/java/org.bassClass&apos;&#x0D;&#x0A;- Original element: &apos;org.Bass.BassClass.java&apos;" description="Copy compilation unit" destination="=Facebook/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;org.bassClass" element1="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;org.Bass{BassClass.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1679806160455" units="1" version="1.0"/>
+</session>

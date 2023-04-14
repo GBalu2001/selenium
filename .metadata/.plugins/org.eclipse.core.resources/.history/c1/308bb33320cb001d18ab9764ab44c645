@@ -1,0 +1,40 @@
+package org.flie;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class login {
+	@Given("To has to launch athe browser and maximize the window")
+	public void to_has_to_launch_athe_browser_and_maximize_the_window() {
+		
+	    
+	}
+
+	@When("To has to hit the url facebook")
+	public void to_has_to_hit_the_url_facebook() {
+	 
+	}
+
+	@When("To has to pass the data in email filed")
+	public void to_has_to_pass_the_data_in_email_filed() {
+	    
+	}
+
+	@When("To has to pass the data in password filed")
+	public void to_has_to_pass_the_data_in_password_filed() {
+	   
+	}
+
+	@When("TO has to click a login button")
+	public void to_has_to_click_a_login_button() {
+	    
+	}
+
+	@Then("To has to close the browser")
+	public void to_has_to_close_the_browser() {
+	   
+	}
+
+
+}

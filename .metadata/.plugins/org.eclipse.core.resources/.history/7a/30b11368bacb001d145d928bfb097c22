@@ -1,0 +1,64 @@
+package org.StepDefenition;
+
+import java.util.List;
+import java.util.Map;
+
+import org.AmazonPjo.PojoClass;
+import org.BassClass.BassClass;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import io.cucumber.datatable.DataTable;
+
+public class Step extends BassClass {
+	PojoClass p ;
+	@Given("To launch browser and maximize the Amazon")
+	public void to_launch_browser_and_maximize_the_Amazon() {
+		launchBrowser();
+		WindowMaximize();
+	  
+	}
+
+	@When("To launch the Amazon url")
+	public void to_launch_the_Amazon_url() {
+		launchUrl("https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2F%3F_encoding%3DUTF8%26ref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&");
+	   
+	}
+
+	@When("To click a creat account button")
+	public void to_click_a_creat_account_button() {
+		p = new PojoClass();
+		clickbtn(p.getCreateNewAccount());
+	   
+	}
+
+	@When("To pass the UserName in firstText  filed")
+	public void to_pass_the_UserName_in_firstText_filed(DataTable d) {
+		Map<String, String> m = d.asMap(String.class,String.class);
+		
+	    p = new PojoClass();
+	    PassText(m.get("UserName_2"), p.getUserNmae());
+	}
+
+	@When("To pass the MobileNumber")
+	public void to_pass_the_MobileNumber(DataTable d ) {
+		List<List<String>> l = d.asLists();
+	    p = new PojoClass();
+	    PassText(l.get(2).get(1), p.getMobileNumber());
+	}
+
+	@When("To pass the password int password Filed")
+	public void to_pass_the_password_int_password_Filed() {
+		p = new PojoClass();
+		PassText("987832", p.getPassword());
+	    
+	}
+
+	@Then("To close the browser")
+	public void to_close_the_browser() {
+		CloseEntrieElement();
+	    
+	}
+
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="114.574579">
+    <testcase classname="To login a mynthra  account functionality of application" name="To login account" time="78.848974">
+        <system-out><![CDATA[Given To launch and maximize the window.....................................passed
+When To pass the application of the url.....................................passed
+And To pass the mobile number...............................................passed
+And To pass the password....................................................passed
+And To click the login button...............................................passed
+Then To close the mynthra browser...........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="TO login icic bank application functionality" name="To login icic bank" time="35.725605">
+        <system-out><![CDATA[Given To launch browser and maximize the window.............................passed
+When To pass the url in icic bank...........................................passed
+And To click the user id check box..........................................passed
+And To pass user id in user filed...........................................passed
+And To pass password in password filed......................................passed
+And To click the login button in icic page..................................passed
+Then To close the browser in icic bank......................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

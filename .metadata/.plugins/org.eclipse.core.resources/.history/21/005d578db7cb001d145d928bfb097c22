@@ -1,0 +1,11 @@
+package org.AmazonPjo;
+
+import org.openqa.selenium.support.PageFactory;
+
+public class PojoClass extends BassClass{
+	private void Amazon() {
+		PageFactory.initElements(driver, getClass());
+
+	}
+
+}

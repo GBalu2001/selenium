@@ -1,0 +1,46 @@
+package org.pojoFacebook;
+
+import org.bassClass.BassClass;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class CreateAccount extends BassClass {
+	public CreateAccount(){
+		PageFactory.initElements(driver, this);
+		
+	}
+	@FindBy(id = "u_0_0_/0")
+	private WebElement CreatNewAccount;
+	
+	@FindBy(id = "u_1_b_yE")
+	private WebElement FristName;
+	@FindBy(id = "u_1_d_iV")
+	private WebElement SecountName;
+	@FindBy(id = "u_1_g_aT")
+	private WebElement email;
+	@FindBy(id = "password_step_input")
+	private WebElement password;
+	
+	
+	
+	public WebElement getCreatNewAccount() {
+		return CreatNewAccount;
+	}
+	public WebElement getFristName() {
+		return FristName;
+	}
+	public WebElement getSecountName() {
+		return SecountName;
+	}
+	public WebElement getEmail() {
+		return email;
+	}
+	public WebElement getPassword() {
+		return password;
+	}
+	
+	
+
+}
+

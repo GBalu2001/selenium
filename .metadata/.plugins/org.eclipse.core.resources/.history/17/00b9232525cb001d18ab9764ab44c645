@@ -1,0 +1,68 @@
+package org.flie;
+
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class login extends org.Bass.BassClass{
+	@Given("User has to launch athe browser and maximize the window")
+	public void user_has_to_launch_athe_browser_and_maximize_the_window() {
+		launchBrowser();
+		WindowMaximize();
+	   
+	}
+
+	@When("User has to hit the url email")
+	public void user_has_to_hit_the_url_email() {
+	launchUrl("https://accounts.google.com/v3/signin/identifier?dsh=S118286695%3A1679758071330402&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=AQMjQ7QS_xjjExparIMEwa6MoohwTafsHbiKJYYatA0X7PPPSBq7zthgP-_ePLWReo-a00xP56Ijyg&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
+	}
+
+	@When("User has to pass the data {string} in email filed")
+ void user_has_to_pass_the_data_in_email_filed(String em) {
+		WebElement email = driver.findElement(By.id("identifierId"));
+		email.sendKeys(em);
+	    
+	}
+
+	@When("User has to click next button")
+	public void user_has_to_click_next_button() {
+		WebElement nextbtn = driver.findElement(By.xpath("//span[text()='Next']"));
+		nextbtn.click();
+		
+	   
+	}
+
+	@When("User has to pass the data {string} in password filed")
+	public void user_has_to_pass_the_data_in_password_filed(String pass) {
+		WebElement password = driver.findElement(By.name("Passwd"));
+		password.sendKeys(pass);
+	  
+	}
+
+	@When("User has to click a login button")
+	public void user_has_to_click_a_login_button() {
+		WebElement nextbtn = driver.findElement(By.xpath("//span[text()='Next']"));
+		nextbtn.click();
+	 
+	}
+
+	@Then("User has to close the browser")
+	public void user_has_to_close_the_browser() {
+		CloseEntrieElement();
+	    
+	}
+
+
+
+	
+
+
+	
+
+
+}
